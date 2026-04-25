@@ -1,0 +1,45 @@
+api_version = "2025-10"
+
+[[extensions]]
+name = "Product updated"
+type = "flow_trigger"
+handle = "product-updated"
+description = "Dispara quando um produto é atualizado no app"
+
+[settings]
+
+[[settings.fields]]
+type = "product_reference"
+key = "product_id"
+name = "Produto"
+description = "Produto atualizado"
+
+[[settings.fields]]
+type = "single_line_text_field"
+key = "title"
+name = "Título"
+description = "Título atual do produto"
+
+[[settings.fields]]
+type = "single_line_text_field"
+key = "status"
+name = "Status"
+description = "Status do produto"
+
+[[settings.fields]]
+type = "single_line_text_field"
+key = "vendor"
+name = "Fornecedor"
+description = "Vendor do produto"
+
+[[settings.fields]]
+type = "date_and_time"
+key = "updated_at"
+name = "Atualizado em"
+description = "Data/hora da última atualização"
+
+[[settings.fields]]
+type = "single_line_text_field"
+key = "tags"
+name = "Tags"
+description = "Tags do produto"
